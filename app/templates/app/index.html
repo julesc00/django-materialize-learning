@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -79,12 +79,11 @@
         </div>
     </div>
 
-    <!-- Helpers -->
     <div class="container">
         <h2>Materialize Utilities</h2>
         <hr>
         <h3>Color Utilities Demo</h3>
-        
+
         <div class="red">
             <p>
                 The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera
@@ -92,14 +91,14 @@
                 for some HTML5 functionality.
             </p>
         </div>
-        
+
         <div class="green">
             <p>
                 The mobile web browser that come pre-installed on iPhones, iPads, and Android
                 phones all have excellent support for HTML5.
             </p>
         </div>
-        
+
         <h3>Alignment Utilities Demo</h3>
         <div class="card-panel valign-wrapper">
             <p class="valign">Vertically Aligned Text</p>
@@ -109,7 +108,7 @@
             <div><p class="right-align">Right Aligned Text</p></div>
             <div><p class="center-align">Center Aligned Text</p></div>
         </div>
-        
+
         <h3>Hide Utilities</h3>
         <div class="hide">
             <p>Hidden on all devices.</p>
@@ -117,7 +116,7 @@
         <div class="hide-on-small-only">
             <p>Hidden on mobile devices.</p>
         </div>
-        
+
         <h3>Formatting Utilities Demo</h3>
         <div class="card-panel">
             <p class="truncate">
@@ -132,10 +131,11 @@
                 phones all have excellent support for HTML5.
             </p>
         </div>
-        
+
         <h3>Center Utility Demo</h3>
         <div class="card-panel center">
-            <img class="circle responsive-img" src="{% static 'images/tux-of-math-command-penguin-aang-tux-racer-penguin-thumb.jpg' %}" alt="tux">
+            <img class="circle responsive-img"
+                 src="{% static 'images/tux-of-math-command-penguin-aang-tux-racer-penguin-thumb.jpg' %}" alt="tux">
         </div>
 
         <!-- Images -->
@@ -162,12 +162,46 @@
         <h3>Videos-Responsive</h3>
         <hr>
         <video class="responsive-video" controls>
-
+            <source src="{% static 'videos/nginx.mp4' %}" type="video/mp4">
         </video>
-            
+
+        <!-- Pulse Buttons -->
+        <h3>Pulse Buttons</h3>
+        <hr>
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel grey lighten-2 center">
+                    <a class="btn-floating pulse" href="#"><i class="material-icons">menu</i></a>
+                    <a class="btn-floating btn-large pulse" href="#"><i class="material-icons">cloud</i></a>
+                    <a class="btn-floating btn-large cyan pulse" href="#"><i class="material-icons">edit</i></a>
+                </div>
+                <div class="col s12">
+                    <div class="card-panel yellow lighten-4 center">
+                        <a href="#"><i class="material-icons tiny">insert_chart</i></a>
+                        <a href="#"><i class="material-icons small">insert_chart</i></a>
+                        <a href="#"><i class="material-icons medium">insert_chart</i></a>
+                        <a href="#"><i class="material-icons large">insert_chart</i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <!-- Shadow -->
+        <h3>Shadow</h3>
+        <hr>
+        <div class="row">
+            <div class="col s12" style="display: flex; align-content: space-between;">
+                <div class="s2 m2 teal lighten-3"><p class="z-depth-1">z-depth-1</p></div>
+                <div class="s2 m2 teal lighten-3"><p class="z-depth-2">z-depth-2</p></div>
+                <div class="s2 m2 teal lighten-3"><p class="z-depth-3">z-depth-3</p></div>
+                <div class="s2 m2 teal lighten-3"><p class="z-depth-4">z-depth-4</p></div>
+                <div class="s2 m2 teal lighten-3"><p class="z-depth-5">z-depth-5</p></div>
+            </div>
+        </div>
+
+
     </div>
+        
 
 
 </body>
