@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h2>Color Theme Demo</h2>
+    <hr>
+    <div class="card-panel">
+        <div class="card-panel red lighten-2">
+            <h1>Red Colored Theme</h1>
+        </div>
+        <span class="red-text text-darken-2">
+        <h2>Red Colored Text</h2>
+    </span>
+
+        <ul>
+            <li class="red lighten-5">Using red lighten-5</li>
+            <li class="red lighten-4">Using red lighten-4</li>
+            <li class="red lighten-3">Using red lighten-3</li>
+            <li class="red lighten-2">Using red lighten-2</li>
+            <li class="red lighten-1">Using red lighten-1</li>
+            <li class="red">Using red</li>
+            <li class="red darken-1">Using red darken-1</li>
+            <li class="red darken-2">Using red darken-2</li>
+            <li class="red darken-3">Using red darken-3</li>
+            <li class="red darken-4">Using red darken-4</li>
+            <li class="red accent-1">Using red accent-1</li>
+            <li class="red accent-2">Using red accent-2</li>
+            <li class="red accent-3">Using red accent-3</li>
+            <li class="red accent-4">Using red accent-4</li>
+        </ul>
+
+    </div>
+
+    <!-- Grids -->
+    <div class="teal">
+        <h2>Mobile First Design Demo</h2>
+        <p>Resize the window to see the effect!</p>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col m1 grey center">1</div>
+        <div class="col m1 center">2</div>
+        <div class="col m1 grey center">3</div>
+        <div class="col m1 center">4</div>
+        <div class="col m1 grey center">5</div>
+        <div class="col m1 center">6</div>
+        <div class="col m1 grey center">7</div>
+        <div class="col m1 center">8</div>
+        <div class="col m1 grey center">9</div>
+        <div class="col m1 center">10</div>
+        <div class="col m1 grey center">11</div>
+        <div class="col m1 center">12</div>
+    </div>
+
+    <div class="row">
+        <div class="col m4 l3 yellow">
+            <p>
+                This text will use 12 columns on a small screen, 4 on a medium
+                screen (m4), and 3 on a l arge screen (13).
+            </p>
+        </div>
+
+        <div class="col m8 l9 grey">
+            <p>
+                This text will use 4 columns on a small screen (s4), 8 on a
+                medium screen (m8), and 9 on a large screen (19).
+            </p>
+        </div>
+    </div>
+
+    <!-- Helpers -->
+    <div class="container">
+        <h2>Materialize Utilities</h2>
+        <hr>
+        <h3>Color Utilities Demo</h3>
+        
+        <div class="red">
+            <p>
+                The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera
+                all support many HTML5 features and Internet Explorer 9.0 will also have support
+                for some HTML5 functionality.
+            </p>
+        </div>
+        
+        <div class="green">
+            <p>
+                The mobile web browser that come pre-installed on iPhones, iPads, and Android
+                phones all have excellent support for HTML5.
+            </p>
+        </div>
+        
+        <h3>Alignment Utilities Demo</h3>
+        <div class="card-panel valign-wrapper">
+            <p class="valign">Vertically Aligned Text</p>
+        </div>
+        <div class="card-panel">
+            <div><p class="left-align">Left Aligned Text</p></div>
+            <div><p class="right-align">Right Aligned Text</p></div>
+            <div><p class="center-align">Center Aligned Text</p></div>
+        </div>
+        
+        <h3>Hide Utilities</h3>
+        <div class="hide">
+            <p>Hidden on all devices.</p>
+        </div>
+        <div class="hide-on-small-only">
+            <p>Hidden on mobile devices.</p>
+        </div>
+        
+        <h3>Formatting Utilities Demo</h3>
+        <div class="card-panel">
+            <p class="truncate">
+                The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera
+                all support many HTML5 features and Internet Explorer 9.0 will also have support
+                for some HTML5 functionality.
+            </p>
+        </div>
+        <div class="card-panel hoverable">
+            <p>
+                The mobile web browser that come pre-installed on iPhones, iPads, and Android
+                phones all have excellent support for HTML5.
+            </p>
+        </div>
+        
+        <h3>Center Utility Demo</h3>
+        <div class="card-panel center">
+            <img class="circle responsive-img" src="{% static 'images/tux-of-math-command-penguin-aang-tux-racer-penguin-thumb.jpg' %}" alt="tux">
+        </div>
+
+        <!-- Images -->
+        <h3>Images</h3>
+        <hr>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 16 offset-13">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="{% static 'images/yuna.jpg' %}" class="circle responsive-img" alt="">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos -->
+        <h3>Videos-Responsive</h3>
+        <hr>
+        <video class="responsive-video" controls>
+
+        </video>
+            
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
